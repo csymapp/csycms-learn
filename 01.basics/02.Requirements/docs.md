@@ -7,16 +7,26 @@ taxonomy:
 
 ## Requirements 
 
-CSYCMS is intentionally designed with few requirements. You can easily run CSYCMS on your local computer, as well on all nodejs Web hosting providers. If you have a pen handy, jot down the following CSYCMS system requirements:
+CSYCMS is intentionally designed with few requirements. You can easily run CSYCMS on your local computer, as well on all nodejs Web hosting providers.  Here are a [list of services](https://github.com/nodejs/node-v0.x-archive/wiki/Node-Hosting) that provide Node hosting if you are looking to publish your site online without setting up your own server.
 
-1. Web Server (Apache, Nginx, etc.)
-2. Nodejs v 8.x or higher
+If you have a pen handy, jot down the following CSYCMS system requirements:
 
-CSYCMS is built with plain text files for your content. There is no database needed. In fact you can copy your content from grav and use them here.
+1. Server
+2. Web Server (Apache, Nginx, etc.)
+3. Nodejs v 8.x or higher
+4. Domain name
+5. ssh keys
+
+CSYCMS is built with plain text files for your content. There is no database needed. In fact, you can copy your content from grav and use them here.
+
+## Server
+
+You will need a server to install and test or use csycms. Although you can use your local computer as this server, you will need a server hosted somewhere else for production. You can check out the cheap [upcloud servers with a month of free trial](https://upcloud.com/signup/?promo=6D7UU8) or any other that you know.
+
 
 ## Web Servers
 
-CSYCMS is so simple and versatile that you don't even need a web server to run it. Its written in node and you can serve it directly. You will only need a webserver to profixy your own nodejs server, to get it running on PORT 80 of a registered domain.
+CSYCMS is so simple and versatile that you don't even need a web server to run it. Its written in node and you can serve it directly. You will only need a webserver to profixy your own nodejs server to get it running on PORT 80 of a registered domain.
 
 Even though technically you do not need a standalone web server, it is better to run one, even for local development. There are many great options available:
 
@@ -38,10 +48,14 @@ We have not tested on Windows yet
 * Nginx. This is the server we would recommend as it utilizes system resources more efficiently than apache.
 
 ## Nodejs
-You will require to set up nodejs to run csycms. Please [check this page](https://joshtronic.com/2018/05/07/how-to-install-the-latest-version-of-nodejs-8-on-ubuntu-1804-lts/) for how to do this in linux.
+You will need to install nodejs in your server. If you experience any problems with this, you can see [how to install nodejs](https://joshtronic.com/2018/05/07/how-to-install-the-latest-version-of-nodejs-8-on-ubuntu-1804-lts/).
 
-## Server configuration
-If you are using an Ubuntu 16.04 server (or any other), then you may need to check that you have killall working. Otherwise CSYCMS will not be able to content the auto-update scripts. If it is not, then you can check for how to [fix killall-command-not-found](https://bytefreaks.net/gnulinux/bash/bash-killall-command-not-found-a-solution)
+Supported Node Versions:
+- v10.x.x
+- v8.x.x
+
+## Domain Name
+Although this is optional, it is good if have a domain name of your own so you can use it instead of the IP of your server.
 
 ## SSH Keys
 If you use a private repo for your site content, then you will need to set-up the ssh keys for accessing the private repo. [See how you can create one](https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html)

@@ -2,6 +2,7 @@
 title: Basics
 metadata:
     description: Discover CSYCMS.
+    author: Brian Onang'o
 taxonomy:
     category: docs
 ---
