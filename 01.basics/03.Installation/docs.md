@@ -1,7 +1,8 @@
 ---
 title: Installation
-taxonomy:
-    category: docs
+metadata:
+    description: We have created an installation script which you can use to install CSYCMS
+    author: Brian Onang'o
 ---
 
 

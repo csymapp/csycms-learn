@@ -1,14 +1,12 @@
 ---
 title: Basics
 metadata:
-    description: Discover CSYCMS.
+    description: Discover what CSYCMS (Csyber Systems Content Management System) is all about and the core concepts behind it.
     author: Brian Onang'o
-taxonomy:
-    category: docs
 ---
 
 #### Chapter 1
 
 # Basics
 
-Discover what CSYCMS is all about and the core concepts behind it.
+Discover what CSYCMS (Csyber Systems Content Management System) is all about and the core concepts behind it.

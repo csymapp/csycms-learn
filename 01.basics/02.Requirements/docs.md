@@ -1,7 +1,8 @@
 ---
 title: Requirements
-taxonomy:
-    category: docs
+metadata:
+    description: CSYCMS is intentionally designed with few requirements. You can easily run CSYCMS on your local computer, as well on all nodejs Web hosting providers..
+    author: Brian Onang'o
 ---
 
 

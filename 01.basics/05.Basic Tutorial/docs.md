@@ -1,7 +1,8 @@
 ---
 title: Basic Tutorial
-taxonomy:
-    category: docs
+metadata:
+    description: we can continue and play around with CSYCMS a little to get you more comfortable.
+    author: Brian Onang'o
 ---
 
 

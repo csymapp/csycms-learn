@@ -9,8 +9,8 @@ taxonomy:
 
 # Todo
 
-- [ ] Metadata
-- [ ] Themes
+- [X] Metadata
 - [ ] Content/folder-structure
+- [ ] Themes
 - [ ] Modular pages
 - [ ] Media

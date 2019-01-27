@@ -1,7 +1,8 @@
 ---
 title: Configuration
-taxonomy:
-    category: docs
+metadata:
+    description: CSYCMS focuses on making things as easy as possible for the user, and the same goes for configuration.
+    author: Brian Onang'o
 ---
 
 

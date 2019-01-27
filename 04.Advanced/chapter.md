@@ -1,11 +1,12 @@
 ---
 title: Advanced
-taxonomy:
-    category: docs
+metadata:
+    description: Learn about some advanced features used in CSYCMS.
+    author: Brian Onang'o
 ---
 
 ### Chapter 4
 
-# Themes
+# Advanced
 
 Learn about some advanced features used in CSYCMS.
