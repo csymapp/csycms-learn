@@ -1,7 +1,8 @@
 ---
 title: Image Linking
-taxonomy:
-    category: docs
+metadata:
+    description: CSYCMS has a variety of flexible linking options that allow you to link images from one page to another, and even from remote sources. If you have ever linked files using HTML or worked with a file system using a command line, a lot of this should be elementary to pick up.
+    author: Brian Onang'o
 ---
 
 ## Image Linking

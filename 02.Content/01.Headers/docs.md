@@ -1,9 +1,8 @@
 ---
 title: Headers
 metadata:
-    description: Many developers do not really understand the basics of how HTTP and web applications work.  This discussion attempts to clarify some common misconceptions.
-taxonomy:
-    category: docs
+    description: The headers (alternatively known as frontmatter) at the top of a page are completely optional, you do not need them at all for a page to display within CSYCMS. Headers are also known as Page Frontmatter and are commonly referred to as such so as not to be confused with HTTP Headers.
+    author: Brian Onang'o
 response_code: 200
 ---
 

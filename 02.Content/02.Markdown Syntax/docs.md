@@ -1,9 +1,7 @@
 ---
 title: Markdown Syntax
 metadata:
-    description: Using third-party components reduces the amount of software maintenance you have to do and documentation you have to write, and lets you draw on the wider community of other developers who use those packages for troubleshooting and support.
-taxonomy:
-    category: docs
+    description: Markdown is a better way to write HTML, without all the complexities and ugliness that usually accompanies it.
 ---
 
 ## Markdown Syntax

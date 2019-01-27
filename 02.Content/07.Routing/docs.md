@@ -1,7 +1,8 @@
 ---
 title: Routing
-taxonomy:
-    category: docs
+metadata:
+    description: Routing in CSYCMS is primarily controlled by the folder structure you use when you build your site content.
+    author: Brian Onang'o
 ---
 
 ## Routing

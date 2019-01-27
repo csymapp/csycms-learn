@@ -1,7 +1,8 @@
 ---
 title: Page Linking
-taxonomy:
-    category: docs
+metadata:
+    description: CSYCMS has a variety of flexible linking options that allow you to link from one page to another, and even to remote pages. If you have ever linked files using HTML or worked with a file system using a command line, a lot of this should be very easy to pick up.
+    author: Brian Onang'o
 ---
 
 ## Page Linking
