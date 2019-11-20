@@ -1,16 +1,14 @@
 ---
 title: What is CSYCMS?
 metadata:
-    description: CSYCMS is a Fast, Simple, and Flexible, file-based content management system, knowledge base and static site generator for nodejs.
+    description: CSYCMS is a Fast, Simple, and Flexible, file-based content management system, knowledge base and static site generator for nodejs. It uses static Markdown files to serve the content which are pulled from public/private repos in github, bitcket, gitlab or any other git repository management service. It runs services that enables it to auto update itself and the content it serves. It follows similar principles to other flat-file CMS platforms, and allows you to use the structure of content files used in the most popular flat file cms but in nodejs. In addition to this, it allows you to host several sites in one instance (installation) of it, and allows you to search across as many of your sites as you please.
     keywords: csycms, file-based content management system, knowledge base, static site generator, nodejs
     author: Brian Onang'o
 ---
 
 ## What is CSYCMS?
 
-CSYCMS is a **Fast**, **Simple**, and **Flexible**, file-based content management system, knowledge base and static site generator for nodejs. It uses static Markdown files to serve the content which are pulled from public/private repos in github, bitcket, gitlab or any other git repository management service. It runs services that enables it to auto update itself and the content it serves. It follows similar principles to other flat-file CMS platforms, and allows you to use the structure of content files used in the [most popular flat file cms](https://getgrav.org) but in nodejs. In addition to this, it allows you to host several sites in one instance (installation) of it, and allows you to search across as many of your sites as you please. See more [features](#features).
-
-Visit [http://learn.csycms.csymapp.com](http://learn.csycms.csymapp.com) to see a demo and get started!
+CSYCMS is a **Fast**, **Simple**, and **Flexible**, file-based content management system, knowledge base and static site generator for nodejs. It uses static Markdown files to serve the content which is pulled from public/private repos in github, bitcket, gitlab or any other git repository management service. It runs services that enables it to auto update itself and the content it serves. It follows similar principles to other flat-file CMS platforms, and allows you to use the structure of content files used in the [most popular flat file cms](https://getgrav.org) but in nodejs. In addition to this, it allows you to host several sites in one instance (installation) of it, and allows you to search across as many of your sites as you please. See more [features](#features).
 
 The underlying architecture of CSYCMS is designed to use well-established and _best-in-class_ technologies. Some of these key technologies include:
 
@@ -22,7 +20,7 @@ If you decide to go further with csycms, then please also learn how to pronouce 
 
 ## CSYCMS' Place in the Universe
 
-There are many powerful open source CMS solutions for building complex websites.  Some of the more commonly used ones are [Joomla](http://joomla.org), [WordPress](http://wordpress.org), and [Drupal](http://drupal.org). The downside of these platforms is that they have a steep learning curve associated with them. This requires a significant amount of your time - and this may be the time that you do not have when creating a website is not your main job.
+There are many powerful open source CMS solutions for building complex websites.  Some of the more commonly used ones are [Joomla](http://joomla.org), [WordPress](http://wordpress.org), and [Drupal](http://drupal.org). The downside of these platforms is that they have a steep learning curve associated with them. ***This requires a significant amount of your time - and this may be the time that you do not have when creating a website is not your main job.*** In our case we spent that time instead in building CSYCMS to make things easy for you.
 
 These platforms provide a wealth of features and functionality that you can extend with a wide variety of open source and proprietary plug-ins and themes.  These extensions and themes are themselves often feature-packed, requiring more knowledge and time on the part of the developer yet. In the end, you often find yourself creating a website that requires many plugins and extensions from many different vendors. This can make your design overly complicated and difficult to maintain over the long term.
 
@@ -45,6 +43,7 @@ That csycms can compare with wordpress & co, we do not pretend. But it is flat f
 - Auto-update of itself, the sites and the themes.
 - Pulls sites content from github/gitlab/bitbucket, etc.
 - Microservices (not in the scrictest sense of the word) to make deployments of multiple sites more stable
+- Upto 4 levels in menu
 
 ### Other advantages
 - Very easy to learn.

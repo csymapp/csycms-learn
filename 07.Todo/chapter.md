@@ -10,7 +10,7 @@ taxonomy:
 # Todo
 
 - [X] Metadata
-- [ ] Content/folder-structure
+- [ ] static content
 - [ ] Themes
 - [ ] Modular pages
 - [ ] Media

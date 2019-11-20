@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{#meta.title}}{{meta.title}} - {{/meta.title}}{{config.site_title}}</title>
+    <title>Layout tests {{#meta.title}}{{meta.title}} - {{/meta.title}}{{config.site_title}}</title>
     {{#meta.metadata.description}}<meta name="description" content="{{meta.metadata.description}}"/>{{/meta.metadata.description}}
     {{#meta.metadata.refresh}}<meta http-equiv="refresh" content="{{meta.metadata.refresh}}"/>{{/meta.metadata.refresh}}
     {{#meta.metadata.keywords}}<meta name="keywords" content="{{meta.metadata.keywords}}"/>{{/meta.metadata.keywords}}
@@ -13,7 +13,7 @@
     {{#meta.metadata.robots}}<meta name="robots" content="{{meta.metadata.robots}}"/>{{/meta.metadata.robots}}
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="shortcut icon" href="{{config.base_url}}/icon.png">
+    <link rel="shortcut icon" href="{{config.base_url}}/sites/{{config.site}}/icon.png">
     <link rel="stylesheet" href="{{config.base_url}}/themes/default/styles/uf_style.css">
     <link rel="stylesheet" href="{{config.base_url}}/themes/default/styles/cstyle.css">
     {{#config.rtl_layout}}
@@ -34,10 +34,39 @@
                     <a href="{{config.base_url}}/" class="brand-logo" style="padding-left: 2rem; text-transform: uppercase">{{config.site_title}}</a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
+                        {{#config.externalLinks}}
+                            <li>{{{.}}}</li>
+                        {{/config.externalLinks}}
+                        {{#config.telegram}}
                         <span id="nav-social">
-                            <li class="fa-stack"><a href="https://github.com/csymapp/csycms" target="_blank"><i
+                            <li class="fa-stack"><a href="{{config.telegram}}" target="_blank"><i
+                                class="fa fa-circle fa-stack-2x"></i><i class="fa fa-telegram fa-stack-1x"></i></a></li>
+                        </span>
+                        {{/config.telegram}}
+                        {{#config.whatsapp}}
+                        <span id="nav-social">
+                            <li class="fa-stack"><a href="{{config.whatsapp}}" target="_blank"><i
+                                class="fa fa-circle fa-stack-2x"></i><i class="fa fa-whatsapp fa-stack-1x"></i></a></li>
+                        </span>
+                        {{/config.whatsapp}}
+                        {{#config.facebook}}
+                        <span id="nav-social">
+                            <li class="fa-stack"><a href="{{config.facebook}}" target="_blank"><i
+                                class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></a></li>
+                        </span>
+                        {{/config.facebook}}
+                       {{#config.youtube}}
+                        <span id="nav-social">
+                            <li class="fa-stack"><a href="{{config.youtube}}" target="_blank"><i
+                                class="fa fa-circle fa-stack-2x"></i><i class="fa fa-youtube fa-stack-1x"></i></a></li>
+                        </span>
+                        {{/config.youtube}}
+                        {{#config.github}}
+                        <span id="nav-social">
+                            <li class="fa-stack"><a href="{{config.github}}" target="_blank"><i
                                 class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x"></i></a></li>
                         </span>
+                        {{/config.github}}
                     </ul>
                 </div>
             </nav>
@@ -54,8 +83,18 @@
                         <span data-search-clear><i class="fa fa-close"></i></span>
                     </form>
                     <div id="mobile-nav">
-                        <a href="https://github.com/csymapp/csycms">Github</a> 
+                         {{#config.facebook}}
+                            <a href="{{config.facebook}}">Facebok</a> 
+                    {{/config.facebook}}
+                        
+                        {{#config.github}}
+                            <a href="{{config.facebook}}">Github</a>
+                        {{/config.github}}
+                         {{#config.github}}
+                        <a href="{{config.facebook}}">Youtube</a>
+                    {{/config.github}}
                     </div>
+                   
                 </div>
             </div>
 
@@ -82,29 +121,29 @@
                             </a>
                             <ul>
                                 {{#files}}
-                                <li class="dd-item {{#active}} active{{/active}}" data-nav-id="{{config.base_url}}/{{slug}}">
+                                <li class="dd-item {{#parent}} parent{{/parent}} {{#active}} active{{/active}}" data-nav-id="{{config.base_url}}/{{slug}}">
                                     <a href="{{slug}}">
                                         <i class="fa fa-check read-icon"></i>
                                         <span>{{title}}</span>
                                     </a>
                                     <ul>
                                         {{#files}}
-                                        <li class="dd-item {{#active}} active{{/active}}" data-nav-id="{{config.base_url}}/{{slug}}">
+                                        <li class="dd-item {{#parent}} parent{{/parent}} {{#active}} active{{/active}}" data-nav-id="{{config.base_url}}/{{slug}}">
                                             <a href="{{slug}}">
                                                 <i class="fa fa-check read-icon"></i>
                                                 <span>{{title}}</span>
                                             </a>
+                                            <ul>
+                                                {{#files}}
+                                                <li class="dd-item {{#parent}} parent{{/parent}} {{#active}} active{{/active}}" data-nav-id="{{config.base_url}}/{{slug}}">
+                                                    <a href="{{slug}}">
+                                                        <i class="fa fa-check read-icon"></i>
+                                                        <span>{{title}}</span>
+                                                    </a>
+                                                </li>
+                                                {{/files}}
+                                            </ul>    
                                         </li>
-                                        <ul>
-                                            {{#files}}
-                                            <li class="dd-item {{#active}} active{{/active}}" data-nav-id="{{config.base_url}}/{{slug}}">
-                                                <a href="{{slug}}">
-                                                    <i class="fa fa-check read-icon"></i>
-                                                    <span>{{title}}</span>
-                                                </a>
-                                            </li>
-                                            {{/files}}
-                                        </ul>
                                         {{/files}}
                                     </ul>
                                 </li>
@@ -165,10 +204,11 @@
                         <br>
                         {{/breadCrumbs}}
                     </div>
-
+                    {{#Toc}}
                     <div class="toc">
                         <ol data-toc="body" data-toc-headings="h2, h3"></ol>
                     </div>
+                    {{/Toc}}
                 </div>
                 {{{yield}}}
 

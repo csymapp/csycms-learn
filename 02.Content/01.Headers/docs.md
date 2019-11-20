@@ -73,6 +73,13 @@ response_code: 404
 
 Allows the dynamic setting of an HTTP Response Code.
 
+### Table of Contents
+``` ruby
+TOC: true/false
+```
+Use this to set if you would like a table of contents to appear on the page. By default (without the TOC setting) there will be a table of contents. It accepts either of `true` or `false`.
+
+
 ## Meta Page Headers
 
 Meta headers allow you to set the [standard set of HTML **<meta> tags**](http://www.w3schools.com/tags/tag_meta.asp) for each page as well as [OpenGraph](http://ogp.me/), [Facebook](https://developers.facebook.com/docs/sharing/best-practices), and [Twitter](https://dev.twitter.com/cards/overview).

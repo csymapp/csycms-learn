@@ -1,7 +1,8 @@
 ---
 title: Basic Tutorial
 metadata:
-    description: we can continue and play around with CSYCMS a little to get you more comfortable.
+    description: Assuming you successfully installed CSYCMS, we can continue and play around with CSYCMS a little to get you more comfortable. Because CSYCMS does not require a database, it is pretty easy to work with, without having to worry about causing issues between your CSYCMS installation and any other significant data source. If something goes awry, you can generally recover very easily.
+    keywords: csycms, file-based content management system, knowledge base, static site generator, nodejs, configuration, tutorial
     author: Brian Onang'o
 ---
 
@@ -14,11 +15,17 @@ Because CSYCMS does not require a database, it is pretty easy to work with, with
 
 ## Content Basics
 
+>>> CSYCMS content folders can be stored in github and pulled from there. You will need to create a github repo and change the origin remote from the one for csycms-site to the one for your repo.
+
 First, let us familiarize ourselves with where CSYCMS stores content.  We will go into more depth in [folder structure](/basics/Folder%20Structure), but for the time being, you need to be aware that all our user content, is stored in the `contents/*/` folder of your CSYCMS install. The contents folder has severall site folders and only the content in a given site folder can be accessed from that site.
 
 The content folders are named starting with the chapter number then the name. eg `01.basics` But it is important to note that the numeric portion up to and including the `.` will be removed from URLs.
 
+>>> Please use a hyphen to separate words in your directory and file names instead of spaces. This is good for SEO.
+
 Each content folder defines a chapter and should have either a `chapter.md` or a `docs.md` file. `chapter.md` is the first page displayed for each chapter.
+
+>>> You can have your content in a hierarchical directory structure of upto 4 levels. We do not know what happens after that. But pages in the fifth level will not be displaced on the left menu in the default layout that we have.
 
 Note also that the numeric portion of the chapter can have any number of zeros preceeding the number.
 
@@ -28,7 +35,7 @@ No configuration needs to be done for the home page. The `chapter.md` page of th
 
 ## Page Editing
 
-Pages in **CSYCMS** are composed in **Markdown** syntax.  Markdown is a formatting syntax that is written in plain text and then converted automatically to HTML. It uses elementary text symbols to indicate key HTML tags making it very easy to write without having to know the complexities of HTML. There are numerous other benefits of using Markdown including less-errors, valid markup, very readable, simple to learn, transferable, etc.
+Pages in **CSYCMS** are composed in **Markdown** syntax.  Markdown is a formatting syntax that is written in plain text and then converted automatically to HTML. It uses elementary text symbols to indicate key HTML tags making it very easy to write without having to know the complexities of HTML. There are numerous other benefits of using Markdown including: less errors, valid markup, very readable, simple to learn, transferable, etc.
 
 You can read an [extensive write-up of available syntax](/Content/Markdown%20Syntax) with examples in the documentation, but for now, follow along.
 
@@ -92,8 +99,21 @@ Creating a new page is a simple affair in **CSYCMS**.  Just follow these simple 
     ```
 
 3. Save this as `docs.md` in the folder that you created. This will tell **CSYCMS** to render the page using the **default** template.
-4. That's it! Restart your sserver and reload your browser to see your new page in the menu.
+4. That's it! Restart your server(no, this does not mean restart csycms service. This will overwrite your changes by pulling new content from the github repo set for the site. Just restart the node.js process which is running the site)  and reload your browser to see your new page in the menu.
 
 The page will automatically show up in the Menu depending on the default theme that you have configured your site to use. You will have to restart your site once you create the new page.
 
 **Congratulations**, you have now successfully created a new page in CSYCMS.  There is much more you can do with CSYCMS, so please continue reading to find out about more advanced capabilities and in-depth features.
+
+
+## csycms-manage
+
+There is a little commandline tool (a bash script to help you with some of the processes). The script in `src/csycms-manage.sh` will help you to:
+- create new sites
+- delete existing sites
+- update sites (commit changes to github)
+- run sites
+
+It should have sufficient documentation to help you learn how to use it. Just go to the root directory of your installation and run
+
+`./src/csycms-manage.sh`

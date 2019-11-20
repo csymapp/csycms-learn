@@ -1,7 +1,8 @@
 ---
 title: Requirements
 metadata:
-    description: CSYCMS is intentionally designed with few requirements. You can easily run CSYCMS on your local computer, as well on all nodejs Web hosting providers..
+    description: CSYCMS is intentionally designed with few requirements. You can easily run CSYCMS on your local computer, as well on all nodejs Web hosting providers.  Here are a [list of services](https://github.com/nodejs/node-v0.x-archive/wiki/Node-Hosting) that provide Node hosting if you are looking to publish your site online without setting up your own server.
+    keywords: csycms, file-based content management system, knowledge base, static site generator, nodejs, requirements
     author: Brian Onang'o
 ---
 

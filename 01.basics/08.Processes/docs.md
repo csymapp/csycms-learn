@@ -1,13 +1,15 @@
 ---
 title: Processes
 metadata:
-    description: CSYCMS is a Fast, Simple, and Flexible, file-based content management system, knowledge base and static site generator for nodejs.
+    description: CSYCMS manages each site almost independently of the others. Restarting one site (due to upates or errors) does not have to necessarily affect other sites. Here is a very brief process of how this is managed.
     keywords: csycms, file-based content management system, knowledge base, static site generator, nodejs
     author: Brian Onang'o
 ---
 
 
 ## Processes
+
+CSYCMS manages each site almost independently of the others. Restarting one site (due to upates or errors) does not have to necessarily affect other sites. Here is a very brief process of how this is managed.
 
 `csycms.service` starts several process:
 
